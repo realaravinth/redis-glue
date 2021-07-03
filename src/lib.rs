@@ -14,6 +14,8 @@ use redis::FromRedisValue;
 use redis::RedisResult;
 use redis::{aio::Connection, cluster::ClusterConnection};
 
+pub use redis;
+
 /// Client configuration
 #[derive(Clone)]
 pub enum RedisConfig {
